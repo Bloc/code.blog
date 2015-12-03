@@ -16,7 +16,7 @@ The `let` keyword actually works the same as `var` except that it is functionall
 
 *`let`'s are the new `var`'s*
 
-```
+```js
 // ES6 
 let number = 2;
 
@@ -57,7 +57,7 @@ Keeping the `let`'s scope within the function prevents potential memory leaks an
 
 The new `=>` is very similar to the `->` in CoffeeScript and with the addition of some curly braces will work similar.
 
-```
+```js
 // CoffeeScript
 addFour = (number) ->  number + 4
 
@@ -81,7 +81,7 @@ One key difference with `=>` is the lexical scope of `this`, which means the sur
 
 `export` replaces the old `modules.export` and comes with the key word `default` for function imports without destructuring (see below).
 
-```
+```js
 // CoffeeScript
 
 // mathStuff.coffee
@@ -116,7 +116,7 @@ console.log(addFour(2) + ' + ' + addTwo(4))
 
 Destructuring is another carry over from similarity from CoffeeScript. ES6 does give you the ability to destructure modules. I use destructuring all the time now when pulling out methods from libraries.
 
-```
+```js
 //ES6 anotherFile.js
 import { addTwo } from './mathStuff';
 
@@ -129,7 +129,7 @@ console.log(addFour(2) + ' + ' + addTwo(4))
 Template strings are great if you are used to string interpolation in CoffeeScript. 
 
 Luckily the ECMAScript 6 team had this in mind.
-```
+```js
 // anotherFile.js
 
 console.log(`${addFour(2)} + ${addTwo(4)}`)
